@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>TEST</title>
+<script type="text/javascript">
+<!--
+function initfunc() {
+    "use strict";
+    var header = document.getElementById("header");
+    var footer = document.getElementById("footer");
+    var middle = document.getElementById("middle");
+    window.addEventListener('scroll', _handleScroll, false);
+    function _handleScroll() {
+        header.style.left = -window.scrollX + "px";
+        footer.style.left = -window.scrollX + "px";
+        // header.style.color = "green";
+        var element = middle.getElementsByClassName("left");
+        for (var i=0;i<element.length;i++) {
+            element[i].style.left = -middle.getBoundingClientRect().left + 'px';
+        }
+    }
+};
+-->
+</script>
+<style type="text/css">
+* {
+    font-family: "ÇlÇr ÉSÉVÉbÉN";
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	border: solid 1px;
+}
+#header {
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 9;
+}
+#footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    z-index: 8;
+}
+#middle {
+    margin-top:4em;
+    margin-bottom:4em;
+}
+.left {
+    left: 0px;
+    position: fixed;
+    color: blue;
+    background-color: white;
+    z-index: 7;
+}
+.right {
+    position: relative;
+    left: 3em;
+    color: red;
+    z-index: 6;
+    background-color: white;
+}
+#middle .left {
+    position: absolute;
+}
+</style>
+</head>
+<body onload="initfunc();">
+<div id="header">
+<table class="left"><tr><td>A</td><td>A</td><td>A</td></table><table class="right"><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>XXXXXXXXXXXXXXXXXXXXXXXX</td></tr></table>
+<table class="left"><tr><td>A</td><td>A</td><td>A</td></table><table class="right"><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>D</td><td>XXXXXXXXXXXXXXXXXXXXXXXX</td></tr></table>
+</div>
+<div id="middle">
+<table class="left"><tr><td>B</td><td>B</td><td>B</td></table><table class="right"><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>XXXXXXXXXXXXXXXXXXXXXXXX</td></tr></table>
+<table class="left"><tr><td>B</td><td>B</td><td>B</td></table><table class="right"><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>XXXXXXXXXXXXXXXXXXXXXXXX</td></tr></table>
+<table class="left"><tr><td>B</td><td>B</td><td>B</td></table><table class="right"><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>XXXXXXXXXXXXXXXXXXXXXXXX</td></tr></table>
+<table class="left"><tr><td>B</td><td>B</td><td>B</td></table><table class="right"><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>XXXXXXXXXXXXXXXXXXXXXXXX</td></tr></table>
+<table class="left"><tr><td>B</td><td>B</td><td>B</td></table><table class="right"><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>E</td><td>XXXXXXXXXXXXXXXXXXXXXXXX</td></tr></table>
+</div>
+<div id="footer">
+<table class="left"><tr><td>C</td><td>C</td><td>C</td></table><table class="right"><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>XXXXXXXXXXXXXXXXXXXXXXXX</td></tr></table>
+<table class="left"><tr><td>C</td><td>C</td><td>C</td></table><table class="right"><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>F</td><td>XXXXXXXXXXXXXXXXXXXXXXXX</td></tr></table>
+</div>
+</body>
+</html>
