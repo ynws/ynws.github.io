@@ -10,15 +10,14 @@ function initfunc() {
     "use strict";
     var header = document.getElementById("header");
     var footer = document.getElementById("footer");
-    var middle = document.getElementById("middle");
+    var midleft = document.getElementById("middle").getElementsByClassName("left");;
     window.addEventListener('scroll', _handleScroll, false);
     function _handleScroll() {
-        header.style.left = -window.scrollX + "px";
-        footer.style.left = -window.scrollX + "px";
-        // header.style.color = "green";
-        var element = middle.getElementsByClassName("left");
-        for (var i=0;i<element.length;i++) {
-            element[i].style.left = -middle.getBoundingClientRect().left + 'px';
+        var dx=-window.pageXOffset + "px";
+        header.style.left = dx;
+        footer.style.left = dx;
+        for (var i=0;i<midleft.length;i++) {
+            midleft[i].style.left = window.pageXOffset + "px";
         }
     }
 };
