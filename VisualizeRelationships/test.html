@@ -10,31 +10,36 @@
 
 var dataset = {
   nodes: [
-    { name : "AAA", image: "aaa.bmp" },
-    { name : "BBB", image: "bbb.bmp" },
-    { name : "CCC", image: "ccc.bmp" },
-    { name : "DDD", image: "ddd.bmp" },
-    { name : "EEE", image: "eee.bmp" },
+    { name : "瞬きよりも速く",        image: "img/mabataki.jpg" },
+    { name : "太陽の黄金の林檎",      image: "img/ringo.jpg" },
+    { name : "ファスト＆スロー",      image: "img/fastandslow.jpg" },
+    { name : "グリッド",              image: "img/grid.jpg" },
+    { name : "お金を稼ぐ読書術",      image: "img/kane-reading.jpg" },
+    { name : "「すぐやる人」の読書術",image: "img/sugu-reading.jpg" },
+    { name : "スゴい早起き",          image: "img/hayaoki.jpg" },
+    { name : "人の心は読めるのか",    image: "img/mind.jpg" },
+    { name : "行動経済学の逆襲",      image: "img/koudoukeizai.jpg" },
   ],
   edges: [
     { source: 0, target: 1 },
-    { source: 0, target: 3 },
-    { source: 1, target: 2 },
-    { source: 1, target: 4 },
     { source: 2, target: 3 },
-    { source: 3, target: 4 },
+    { source: 2, target: 6 },
+    { source: 2, target: 7 },
+    { source: 2, target: 8 },
+    { source: 4, target: 5 },
+    { source: 5, target: 6 },
   ]
 };
 
-var w = 800;
-var h = 800;
+var w = 1200;
+var h = 1200;
 
 var cola = cola.d3adaptor()
     .nodes(dataset.nodes)
     .links(dataset.edges)
-    .linkDistance(100)
+    .linkDistance(300)
     .avoidOverlaps(true)
-    .symmetricDiffLinkLengths(20)
+    .symmetricDiffLinkLengths(50)
     .size([w, h])
     .start();
 
@@ -49,8 +54,8 @@ var edges =
     .data(dataset.edges)
     .enter()
     .append("line")
-    .style("stroke", "#ccc")
-    .style("stroke-width", 1);
+    .style("stroke", "#aaa")
+    .style("stroke-width", 5);
 
 var nodes = 
   svg.selectAll("image")
@@ -59,18 +64,9 @@ var nodes =
     .append("image")
     .attr({
         'xlink:href': function(d) {return d.image;},
-        'width' : 50,
-        'height': 50,
-
+        'width' : 160,
+        'height': 160,
     })
-    .call(cola.drag);
-
-var labels = 
-  svg.selectAll("text")
-    .data(dataset.nodes)
-    .enter()
-    .append("text")
-    .text( function(d) {return d.name;} )
     .call(cola.drag);
 
 cola.on("tick", function() {
@@ -79,12 +75,8 @@ cola.on("tick", function() {
        .attr("x2", function(d) { return d.target.x; })
        .attr("y2", function(d) { return d.target.y; });
 
-  nodes.attr("x", function(d) { return d.x; })
-       .attr("y", function(d) { return d.y; });
-
-  labels.attr("x", function(d) { return d.x; })
-        .attr("y", function(d) { return d.y; });
-
+  nodes.attr("x", function(d) { return d.x-55; })
+       .attr("y", function(d) { return d.y-80; });
 });
 
     </script>
