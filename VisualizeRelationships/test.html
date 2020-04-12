@@ -10,11 +10,11 @@
 
 var dataset = {
   nodes: [
-    { name : "AAA" },
-    { name : "BBB" },
-    { name : "CCC" },
-    { name : "DDD" },
-    { name : "EEE" },
+    { name : "AAA", image: "aaa.bmp" },
+    { name : "BBB", image: "bbb.bmp" },
+    { name : "CCC", image: "ccc.bmp" },
+    { name : "DDD", image: "ddd.bmp" },
+    { name : "EEE", image: "eee.bmp" },
   ],
   edges: [
     { source: 0, target: 1 },
@@ -53,20 +53,12 @@ var edges =
     .style("stroke-width", 1);
 
 var nodes = 
-  svg.selectAll("img")
+  svg.selectAll("image")
     .data(dataset.nodes)
     .enter()
-    .append("img")
-    // .attr("src", function () {
-    //     var url = "aaa.bmp";
-    //     var img = new Image();
-    //     return img.src = url;
-    // })
+    .append("image")
     .attr({
-        // 'src'   : function(data){
-            // return 'images/' + data + '.png';
-        // },
-        'xlink:href': "aaa.bmp",
+        'xlink:href': function(d) {return d.image;},
         'width' : 50,
         'height': 50,
 
