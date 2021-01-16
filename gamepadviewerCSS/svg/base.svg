@@ -8,6 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="71.492661"
+   inkscape:export-xdpi="71.492661"
+   inkscape:export-filename="F:\Dropbox\Sourcecode\github.io\gamepadviewerCSS\skins\base.png"
    sodipodi:docname="base.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
@@ -25,9 +28,9 @@
      inkscape:window-width="1920"
      showgrid="false"
      inkscape:document-rotation="0"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="-27.883516"
+     inkscape:cy="184.94034"
      inkscape:cx="170.14071"
      inkscape:zoom="0.93974428"
      inkscape:pageshadow="2"
@@ -59,7 +62,10 @@
        height="254.44058"
        width="386.47171"
        id="rect1043"
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-opacity:1" />
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-opacity:1"
+       inkscape:export-filename="F:\Dropbox\Sourcecode\github.io\gamepadviewerCSS\skins\base.png"
+       inkscape:export-xdpi="72"
+       inkscape:export-ydpi="72" />
   </g>
   <g
      style="display:none;mix-blend-mode:normal"
@@ -135,11 +141,11 @@
        id="path888-4" />
     <path
        id="path1021"
-       d="m 152.13541,-26.03311 0.80321,-0.897692 h 27.97023 l 0.75595,0.944939 0.14175,21.2139137 -0.75596,0.6142112 -28.11197,0.094494 -0.80321,-0.8031994 z"
+       d="m 185.59667,0.9815015 0.80321,-0.897692 h 27.97023 l 0.75595,0.944939 0.14175,21.2139135 -0.75596,0.614211 -28.11197,0.09449 -0.80321,-0.803199 z"
        style="display:inline;mix-blend-mode:normal;fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        style="display:inline;mix-blend-mode:normal;fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -24.096197,-26.184392 0.80321,-0.897692 H 4.6772413 l 0.75595,0.944939 0.14175,21.2139148 -0.75596,0.614211 -28.1119683,0.09449 -0.80321,-0.8032 z"
+       d="m -58.114802,1.7828052 0.80321,-0.897692 h 27.970228 l 0.75595,0.944939 0.14175,21.2139148 -0.75596,0.614211 -28.111968,0.09449 -0.80321,-0.8032 z"
        id="path1021-5" />
     <path
        sodipodi:nodetypes="cccccc"

@@ -1,29 +1,52 @@
-.ps .bumper {
-    transform: scale(1.4, 2.3);
-}
-.ps .bumpers {
-    top: 85px;
+.controller.ps {
+    height: 488px;
+    width: 784px;
 }
 
-.ps .bumper.left {
-    transform: rotateY(180deg);
-    transform: scale(1.4, 2.3);
+.ps .bumpers {
+    top: 18px;
+    left: 145px;
+    width: 497px;
+    transform: scale(1.2, 2.3);
+}
+
+.ps .triggers {
+    left: 10px;
+    top: 10px;
+    width: 766px;
+}
+
+.ps .face.up {
+    top: -69px;
+}
+
+.ps .face.down {
+    top: 20px;
+}
+
+.ps .face.left {
+    top: -18px;
+}
+
+.ps .face.right {
+    top: -18px;
 }
 
 .ps .button {
     transform: scale(1.1, 1.1);
+    top: 70px;
 }
 
 .ps .b {
-    top: 77px;
+    top: 5px;
     right: 5px;
 }
 .ps .x {
-    top: 77px;
+    top: 5px;
     left: 5px;
 }
 .ps .y {
-    top: 8px;
+    top: -60px;
     left: 71px;
 }
 
@@ -62,3 +85,4 @@
 .ps.white .face {
     background-image: url(https://ynws.github.io/gamepadviewerCSS/skins/dpad.png);
 }
+
