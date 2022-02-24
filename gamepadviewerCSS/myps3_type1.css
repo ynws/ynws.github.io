@@ -1,0 +1,88 @@
+.controller.ps {
+    height: 488px;
+    width: 784px;
+}
+
+.ps .bumpers {
+    top: 18px;
+    left: 145px;
+    width: 497px;
+    transform: scale(1.2, 2.3);
+}
+
+.ps .triggers {
+    left: 10px;
+    top: 10px;
+    width: 766px;
+}
+
+.ps .face.up {
+    top: -69px;
+}
+
+.ps .face.down {
+    top: 20px;
+}
+
+.ps .face.left {
+    top: -18px;
+}
+
+.ps .face.right {
+    top: -18px;
+}
+
+.ps .button {
+    transform: scale(1.1, 1.1);
+    top: 70px;
+}
+
+.ps .b {
+    top: 5px;
+    right: 5px;
+}
+.ps .x {
+    top: 5px;
+    left: 5px;
+}
+.ps .y {
+    top: -60px;
+    left: 71px;
+}
+
+.ps .face {
+    transform: scale(1.35, 1.35);
+}
+
+.controller.ps.white {
+    background-image: url(https://ynws.github.io/gamepadviewerCSS/skins/base.png);
+}
+
+.ps.white .trigger {
+    background-image: url(https://ynws.github.io/gamepadviewerCSS/skins/triggers.png);
+}
+
+.ps.white .bumper {
+    background-image: url(https://ynws.github.io/gamepadviewerCSS/skins/bumpers.png);
+}
+
+.ps.white .quadrant {
+    background-image: url(https://ynws.github.io/gamepadviewerCSS/skins/player-n.png);
+}
+
+.ps.white .back, .ps.white .start {
+    background-image: url(https://ynws.github.io/gamepadviewerCSS/skins/menus.png);
+}
+
+.ps.white .button {
+    background-image: url(https://ynws.github.io/gamepadviewerCSS/skins/face-buttons-type1.png);
+}
+
+.ps.white .stick {
+    background-image: url(https://ynws.github.io/gamepadviewerCSS/skins/thumbs.png);
+}
+
+.ps.white .face {
+    background-image: url(https://ynws.github.io/gamepadviewerCSS/skins/dpad-type1.png);
+}
+
